@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/src/.vs
+/src/Data/Com.Npo.Data/bin/Debug
+/src/Data/Com.Npo.Data/obj
+/src/UI/API/Com.Npo.API/bin/Debug
+/src/UI/API/Com.Npo.API/obj
+/src/Business/Model/com.npo.business.model/bin/Debug
+/src/Business/Model/com.npo.business.model/obj
+/src/Business/Service/com.npo.business.service/bin/Debug
+/src/Business/Service/com.npo.business.service/obj
+/src/Common/Core/BaseProject/bin/Debug
+/src/Common/Core/BaseProject/obj
+/src/Common/Shared/Com.Npo.Common/bin/Debug
+/src/Common/Shared/Com.Npo.Common/obj
+/src/UI/Web/Com.Npo.WebSpa/obj/Debug

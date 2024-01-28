@@ -8,9 +8,14 @@ namespace com.npo.business.model
         public string? FirstName { get; set; }
         public string? MiddleName { get; set; }
         public string? LastName { get; set; }
-        public List<Attribute>? AdditionalAttributes { get; set; }
+        public string? Gender { get; set; }
 
     }
+    public class PersonAttribute : BaseObject
+    {
+        public Person? Person { get; set; }
+        public Base.Attribute? Attribute { get; set; }
+    }
 
-   
+
 }

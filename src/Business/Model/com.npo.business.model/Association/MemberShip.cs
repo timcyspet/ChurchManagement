@@ -7,15 +7,14 @@ using System.Threading.Tasks;
 
 namespace com.npo.business.model.Association
 {
-    public class MemberShip: BaseObject
+    public class MemberShip: TemporalBaseObject
     {
         public List<Member>? Members { get; set; }
         public MemberShipType? MemberShipType { get; set; }
-        public List<Attribute>? AdditionalAttributes { get; set; }
     }
 
 
-    public class MemberShipType : BaseObject
+    public class MemberShipType : TemporalBaseObject
     {
         public string? Name { get; set; }
         public string? Code { get; set; }
@@ -28,8 +27,17 @@ namespace com.npo.business.model.Association
     
     }
 
-    public class MemberType: BaseObject { 
+    public class MemberType: TemporalBaseObject
+    { 
         public string? Name { get; set;}
         public string? Code { get; set;}
     }
+
+    public class MemberShipAttribute: BaseObject
+    {
+        public MemberShip? MemberShip { get; set; }
+        public Base.Attribute? Attribute { get; set; }
+    }
+
+
 }

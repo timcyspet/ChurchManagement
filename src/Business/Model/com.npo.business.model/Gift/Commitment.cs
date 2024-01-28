@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace com.npo.business.model.Gift
 {
-    public class Commitment: BaseObject
+    public class Commitment : TemporalBaseObject
     {
         public string? Name { get; set; }
         public string? Description { get; set; }
@@ -16,12 +16,13 @@ namespace com.npo.business.model.Gift
 
     }
 
-    public class CommitmentType: BaseObject { 
-        public string? Name { get; set;}
+    public class CommitmentType : TemporalBaseObject
+    {
+        public string? Name { get; set; }
         public string? Code { get; set; }
         public bool IsMandatory { get; set; }
         public bool IsRecurring { get; set; }
         public bool IsEvent { get; set; }
     }
-    
+
 }

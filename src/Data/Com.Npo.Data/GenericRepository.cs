@@ -188,11 +188,11 @@ namespace Com.Npo.Data
             {
                 entity.CreatedBy = currentUserEmailId;
 
-                entity.CreatedOn = DateTime.Now;
+                entity.CreatedDate = DateTime.Now;
 
                 entity.ModifiedBy = currentUserEmailId;
 
-                entity.ModifiedOn = DateTime.Now;
+                entity.ModifiedDate = DateTime.Now;
 
                 entity.IsDeleted = false;
 
@@ -217,7 +217,7 @@ namespace Com.Npo.Data
             {
                 entity.ModifiedBy = currentUserEmailId;
 
-                entity.ModifiedOn = DateTime.Now;
+                entity.ModifiedDate = DateTime.Now;
 
                 dbSet.Attach(entity);
 
@@ -240,7 +240,7 @@ namespace Com.Npo.Data
 
                 entityToActive.ModifiedBy = currentUserEmailId;
 
-                entityToActive.ModifiedOn = DateTime.Now;
+                entityToActive.ModifiedDate = DateTime.Now;
 
                 entityToActive.IsActive = IsActive;
 
@@ -268,7 +268,7 @@ namespace Com.Npo.Data
 
                 entityToDelete.ModifiedBy = currentUserEmailId;
 
-                entityToDelete.ModifiedOn = DateTime.Now;
+                entityToDelete.ModifiedDate = DateTime.Now;
 
                 entityToDelete.IsDeleted = true;
 

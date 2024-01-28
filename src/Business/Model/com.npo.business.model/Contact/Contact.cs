@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using com.npo.business.model.Association;
 
 namespace com.npo.business.model.Contact
 {
@@ -15,15 +16,20 @@ namespace com.npo.business.model.Contact
         public string? PhoneNumber { get; set; }
         public Address? CommunicationAddress { get; set; }
         public Address? PermanentAddress { get; set; }
-        public Dictionary<string, string>? ExternalReferance { get; set; }
     }
 
-    public class Address : BaseObject
+    public class Address : TemporalBaseObject
     {
         public string? StreetName { get; set; }
         public City? City { get; set; }
         public string? PostalCode { get; set; }
         
+    }
+
+    public class ContactAttribute : BaseObject
+    {
+        public Contact? Contact { get; set; }
+        public Base.Attribute? Attribute { get; set; }
     }
 
 

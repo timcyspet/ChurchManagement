@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace com.npo.business.model.Base
 {
-
+  
     public class Attribute : BaseObject
     {
         public AttributeKey? AttributeKey { get; set; }
@@ -22,7 +23,7 @@ namespace com.npo.business.model.Base
         public string? ValueType { get; set; }
     }
 
-    public class AttributeType : BaseObject
+    public class AttributeType : TemporalBaseObject
     {
         public string? Name { get; set; }
         public string? Code { get; set; }

@@ -10,10 +10,11 @@ namespace Com.Npo.BaseProject.Interface
     {
         long Id { get; set; }
         string? CreatedBy { get; set; }
-        DateTime CreatedOn { get; set; }
+        DateTime CreatedDate { get; set; }
         string? ModifiedBy { get; set; }
-        DateTime ModifiedOn { get; set; }
+        DateTime ModifiedDate { get; set; }
         bool IsDeleted { get; set; }
         bool IsActive { get; set; }
+
     }
 }
